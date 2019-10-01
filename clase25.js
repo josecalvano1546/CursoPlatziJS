@@ -4,9 +4,9 @@ De todos modos, en algunas situaciones puede ser útil colocar un valor por defe
 que lo evalúe como verdadero. */
 class persona{
     //Constructor de la clase
-    constructor(nombre, apellido,altura){
+    constructor(nombreObjeto, apellido,altura){
         //Atributos
-        this.nombre = nombre
+        this.nombre = nombreObjeto
         this.apellido = apellido
         this.altura = altura
     }
@@ -45,8 +45,6 @@ class desarrollador extends persona{
             fn(this.nombre,this.apellido, true)
         }
     }
-    
-
 
 }
 
@@ -64,3 +62,4 @@ var arturo = new persona('arturo','romero',1.4)
 jose.saludar(responderSaludo)
 arturo.saludar(responderSaludo)
 arturo.saludar()
+
